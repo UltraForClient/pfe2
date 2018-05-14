@@ -1,0 +1,22 @@
+parameters:
+    locale: 'en'
+    app_locales: en|pl
+    app.path.images: '/uploads/images'
+
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+
+        bind:
+            $locales: '%app_locales%'
+            $defaultLocale: '%locale%'
+
+    App\:
+        resource: '../src/*'
+        exclude: '../src/{Entity,Migrations,Tests,Kernel.php}'
+
+    App\Controller\:
+        resource: '../src/Controller'
+        tags: ['controller.service_arguments']

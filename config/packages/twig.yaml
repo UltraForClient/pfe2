@@ -1,0 +1,8 @@
+twig:
+    paths: ['%kernel.project_dir%/templates']
+    debug: '%kernel.debug%'
+    strict_variables: '%kernel.debug%'
+    globals:
+        email_from: '%env(resolve:MAILER_FROM)%'
+        email_to: '%env(resolve:MAILER_TO)%'
+

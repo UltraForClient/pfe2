@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+
+{% block css %}
+{% endblock %}
+
+{% block body %}
+    <main>
+        <div class="container">
+            {% set method="text#{ locale }"  %}
+            {{ attribute(text, method)|raw }}
+            <h2 class="area__title">Proponujemy odwiedzić:</h2>
+        </div>
+
+        <section class="container">
+            <ul class="gridder">
+            {% for key, image in images %}
+                <li class="gridder-list" data-griddercontent="#gridder-content-{{ key }}">
+                    <div class="image" style="background-image: url({{ vich_uploader_asset(image, 'imageFile') }})"></div>
+                </li>
+            {% endfor %}
+            </ul>
+            {% for key, image in images %}
+                <div id="gridder-content-{{ key }}" class="gridder-content">
+                    <img src="{{ vich_uploader_asset(image, 'imageFile') }}">
+                </div>
+            {% endfor %}
+        </section>
+
+        <div class="container">
+            <ul class="area__list">
+                {% for image in images %}
+                    <li class="area__item">
+                        {% set method="title#{ locale }"  %}
+                        <h3>{{ attribute(image, method)|raw }}</h3>
+                        {% set method="time#{ locale }"  %}
+                        <span>{{ attribute(image, method)|raw }}</span>
+                        {% set method="text#{ locale }"  %}
+                        <p>{{ attribute(image, method)|raw }}</p>
+                        <a href="{{ image.link|raw }}" target="_blank">{{ image.link|raw }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </main>
+{% endblock %}
+
+{% block js %}
+{% endblock %}
+
+
+
+
