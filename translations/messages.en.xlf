@@ -19,6 +19,10 @@
                 <source>sub.hotel.surroundings</source>
                 <target>Surroundings</target>
             </trans-unit>
+            <trans-unit id="sub.hotel.rooms">
+                <source>sub.hotel.rooms</source>
+                <target>Rooms</target>
+            </trans-unit>
 
             <trans-unit id="nav.prices">
                 <source>nav.prices</source>

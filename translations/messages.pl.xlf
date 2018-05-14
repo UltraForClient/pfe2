@@ -19,6 +19,10 @@
                 <source>sub.hotel.surroundings</source>
                 <target>Okolica</target>
             </trans-unit>
+            <trans-unit id="sub.hotel.rooms">
+                <source>sub.hotel.rooms</source>
+                <target>Pokoje</target>
+            </trans-unit>
 
             <trans-unit id="nav.prices">
                 <source>nav.prices</source>

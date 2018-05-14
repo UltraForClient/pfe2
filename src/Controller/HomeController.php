@@ -104,6 +104,14 @@ class HomeController extends Controller
         ]);
     }
 
+    /**
+     * @Route("/rooms", name="rooms")
+     */
+    public function roomsAction(): Response
+    {
+        return $this->render('subpage/rooms.html.twig');
+    }
+
 
     /**
      * @Route("/relaxation", name="relaxation")

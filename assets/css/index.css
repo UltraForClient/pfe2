@@ -7,6 +7,7 @@
 @import "./mod/relaxation.css";
 @import "./mod/konf.css";
 @import "./mod/login.css";
+@import "./mod/rooms.css";
 
 
 
@@ -310,7 +311,9 @@ button {
 
 .screen {
     width: 100%;
-    padding-left: 40px;
+    padding: 0 15px;
+    margin: 0 auto;
+    min-height: 100vh;
 }
 
 .screen {
@@ -323,7 +326,8 @@ button {
 
 .screen__text {
     margin-bottom: 30px;
-    background-color: #ffffff;
+    background-color: #fff;
+    padding: 20px;
 }
 
 .screen__title {
@@ -391,7 +395,7 @@ button {
 }
 
 .booking {
-    position: absolute;
+    position: fixed;
     top: 286px;
     left: -45px;
     text-align: center;
@@ -405,6 +409,7 @@ button {
     letter-spacing: 1px;
     padding: 5px;
     transform: rotate(-90deg);
+    z-index: 123123;
 }
 
 .contact {
@@ -416,9 +421,12 @@ button {
 }
 
 .contact > div {
-    background-color: rgba(200, 200, 200, .8);
+    background-color: hsla(0,0%,78%,.8);
     padding-bottom: 40px;
-    padding-left: 5px;
+    padding-left: 25px;
+    width: 100%;
+    padding-right: 25px;
+    margin: 0 auto;
 }
 
 .contact__title {

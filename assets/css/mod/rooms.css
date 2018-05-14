@@ -1,0 +1,9 @@
+.rooms img {
+    width: 100%;
+}
+
+.rooms__title {
+    text-align: center;
+    color: #3dad57;
+    font-size: 2rem;
+}
