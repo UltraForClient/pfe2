@@ -193,7 +193,7 @@ button {
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     padding-left: 0!important;
     margin-bottom: 50px;
 }
@@ -409,11 +409,11 @@ button {
     letter-spacing: 1px;
     padding: 5px;
     transform: rotate(-90deg);
-    z-index: 123123;
+    z-index: 9;
 }
 
 .contact {
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -569,6 +569,10 @@ button {
 }
 
 @media(min-width: 600px) {
+    .main-header, .contact {
+        background-attachment: scroll;
+    }
+
     .main-header__title img{
         width: 70%;
     }
