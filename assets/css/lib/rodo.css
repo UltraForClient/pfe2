@@ -1,0 +1,160 @@
+.cover {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.blur-in {
+    animation: blur 2s forwards;
+}
+
+.blur-out {
+    animation: blur-out 2s forwards;
+}
+
+@-webkit-keyframes blur {
+    0% {
+        filter: blur(0px);
+    }
+
+    100% {
+        filter: blur(4px);
+    }
+}
+
+@-moz-keyframes blur {
+    0% {
+        filter: blur(0px);
+    }
+
+    100% {
+        filter: blur(4px);
+    }
+}
+
+@-o-keyframes blur {
+    0% {
+        filter: blur(0px);
+    }
+
+    100% {
+        filter: blur(4px);
+    }
+}
+
+@keyframes blur {
+    0% {
+        filter: blur(0px);
+    }
+
+    100% {
+        filter: blur(4px);
+    }
+}
+
+@-webkit-keyframes blur-out {
+    0% {
+        filter: blur(4px);
+    }
+
+    100% {
+        filter: blur(0px);
+    }
+}
+
+@-moz-keyframes blur-out {
+    0% {
+        filter: blur(4px);
+    }
+
+    100% {
+        filter: blur(0px);
+    }
+}
+
+@-o-keyframes blur-out {
+    0% {
+        filter: blur(4px);
+    }
+
+    100% {
+        filter: blur(0px);
+    }
+}
+
+@keyframes blur-out {
+    0% {
+        filter: blur(4px);
+    }
+
+    100% {
+        filter: blur(0px);
+    }
+}
+
+.content {
+    width: 650px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+span {
+    color: dimgray;
+}
+
+.pop-up {
+    position: fixed;
+    margin: 5% auto;
+    left: 0;
+    top: 0;
+    z-index: 65;
+}
+
+.box {
+    background-color: whitesmoke;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    position: relative;
+    width: 90%;
+    box-shadow: 0 4px 6px 0 rgba(0,0,0,0.1);
+}
+
+.pop-up .button {
+    margin: 0 auto 33px auto;
+    background-color: #FF8566;
+}
+
+.pop-up .button:hover {
+    background-color: #7CCF29;
+    box-shadow: 0 4px 6px 0 rgba(0,0,0,0.1);
+}
+
+.pop-up .close-button {
+    transition: all 0.5s ease;
+    position: absolute;
+    background-color: #FF9980;
+    padding: 1.5px 7px;
+    left: 0;
+    margin-left: -10px;
+    margin-top: -9px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    color: white;
+    box-shadow: -3px 1px 6px 0 rgba(0,0,0,0.1);
+}
+
+.pop-up .close-button:hover {
+    background-color: tomato;
+    color: #fff;
+}
+
+.pop-up h3 {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #fff;
+    background-color: #FF704D;
+}

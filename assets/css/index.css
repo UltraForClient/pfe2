@@ -3,6 +3,8 @@
 @import "./lib/pgwslider.min.css";
 @import "./lib/jquery.gridder.min.css";
 
+@import "./lib/rodo.css";
+
 @import "./mod/environment.css";
 @import "./mod/relaxation.css";
 @import "./mod/konf.css";

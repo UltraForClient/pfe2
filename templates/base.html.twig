@@ -126,18 +126,100 @@
             <a href="http://www.rpo-swietokrzyskie.pl" class="footer__img" target="_blank"><img src="{{ asset('build/img/eu.png') }}"></a>
         </footer>
     {% endblock %}
-        <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <div class="row pop-up" style="display: none;">
+        <div class="box small-6 large-centered">
+            <a href="#" class="close-button">&#10006;</a>
+            <h3>RODO</h3>
+            <div>
+                <h4><b>Klauzula informacyjna o przetwarzaniu danych</b></h4>
+                <p>Na podstawie art. 13 ust. 1 i ust. 2 rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z 27 kwietnia 2016 roku w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (dalej: RODO), informuję, że:</p>
 
-        <script src="{{ asset('build/lib/pgwslider.min.js') }}"></script>
-        <script src="{{ asset('build/lib/jquery.waypoints.min.js') }}"></script>
-        <script src="{{ asset('build/lib/jquery.tabSlideOut.js') }}"></script>
-        <script src="{{ asset('build/lib/jquery.gridder.min.js') }}"></script>
+                <h4><b>Administrator danych:</b></h4>
+                <p>Administratorem danych osobowych jest: Sylwester Galus działający pod firmą: ELPEX Sylwester Galus z siedzibą w Przyjmo, ul. Dolna 2, 26-085 Miedziana Góra, e-mail: elpex@op.pl, tel. 512 180 277</p>
 
-        <script src="{{ asset('build/index.js') }}"></script>
-        {% block js %}{% endblock %}
+                <h4><b>Przedstawiciel administratora danych:</b></h4>
+                <p>Przedstawicielem administratora danych osobowych w Polsce jest Sylwester Galus, Przyjmo ul. Dolna 2, 26-085 Miedziana Góra, e-mail: elpex@op.pl, tel. 512 180 277</p>
+
+                <h4><b>Inspektor ochrony danych:</b></h4>
+
+                <p>Dane kontaktowe inspektora ochrony danych w Gościniec Europejski z siedzibą w Przyjmo, ul. Dolna 2, 26-085 Miedziana Góra  to: Sylwester Ślusarczyk, e-mail: sylweczek0@wp.pl, tel. 691 739 981</p>
+
+
+                <h4><b>Cele przetwarzania danych osobowych oraz podstawa prawna przetwarzania:</b></h4>
+                <p>
+                    Przetwarzanie danych osobowych odbywać się będzie na podstawie art. 6 ust. 1 lit. b RODO <br>
+                    i wyłącznie w celu zapewnienia korzystania z usług świadczonych przez ELPEX
+                </p>
+                <h4><b>Prawnie uzasadniony interes:</b></h4>
+                <p>Przetwarzanie danych osobowych odbywać się będzie również w oparciu o prawnie uzasadniony interes Administratora na podstawie art. 6 ust. 1 lit. f RODO w celu w celu rozpatrywania reklamacji, dochodzenia i obrony wzajemnych roszczeń, jak również przekazywania informacji o własnych usługach.</p>
+
+                <h4><b>Okres przechowywania danych osobowych:</b></h4>
+                <p>Pani/Pana dane osobowe będą przechowywane przez okres niezbędny do realizacji usługi oraz ewentualnie dochodzenia związanych z nią roszczeń.</p>
+
+                <h4><b>Prawo dostępu do danych osobowych:</b></h4>
+                <p>
+                    Posiada Pani/Pan prawo:
+                    - dostępu do treści swoich danych osobowych,
+                    - prawo do ich sprostowania, usunięcia oraz prawo do ograniczenia ich przetwarzania.
+                    Ponadto także prawo do:
+                    - cofnięcia zgody w dowolnym momencie bez wpływu na zgodność z prawem przetwarzania,
+                    - prawo do przenoszenia danych
+                    - prawo do wniesienia sprzeciwu wobec przetwarzania Pani/Pana danych osobowych.
+                </p>
+                <p>
+                    Prawo wniesienia skargi do organu nadzorczego:
+                    Przysługuje  Pani/Panu  prawo  wniesienia  skargi  do  Prezesa   Urzędu   Ochrony   Danych   Osobowych, ul. ul. Stawki 2, 00-913 Warszawa gdy uzna Pani/Pan, iż przetwarzanie danych osobowych Pani/Pana dotyczących narusza przepisy RODO.
+                </p>
+                <h4><b>Konsekwencje niepodania danych osobowych:</b></h4>
+                <p>Podanie przez Panią/Pana danych osobowych jest wymogiem warunkiem zawarcia umowy  , <br>
+                    a ich niepodanie będzie skutkowało odmową zawarcia umowy i wykonania usługi.
+                </p>
+                <h4><b>Odbiorcy danych:</b></h4>
+                Odbiorcą Pani/Pana danych osobowych będą podmioty prowadzące na rzecz Administratora danych obsługę księgową informatyczną i prawną
+
+                <h4><b>Przekazanie danych do państwa trzeciego/organizacji międzynarodowej:</b></h4>
+                <p>Nie dotyczy</p>
+                <h4><b>Zautomatyzowane podejmowanie decyzji, profilowanie:</b></h4>
+                <p>Nie dotyczy</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="{{ asset('build/lib/pgwslider.min.js') }}"></script>
+    <script src="{{ asset('build/lib/jquery.waypoints.min.js') }}"></script>
+    <script src="{{ asset('build/lib/jquery.tabSlideOut.js') }}"></script>
+    <script src="{{ asset('build/lib/jquery.gridder.min.js') }}"></script>
+
+    <script src="{{ asset('build/index.js') }}"></script>
+
+    <script type="application/javascript">
+        $('#slider').nivoSlider();
+        if(localStorage.getItem('rodo') === null) {
+            console.log('asd')
+            $('.pop-up').fadeIn(1000);
+
+            $('.close-button').click(function (e) {
+
+                $('.pop-up').fadeOut(700);
+                $('#overlay').removeClass('blur-in');
+                $('#overlay').addClass('blur-out');
+                e.stopPropagation();
+
+            });
+        }
+
+        localStorage.setItem('rodo', 'is');
+
+    </script>
+    <script type="application/javascript" src="{{ asset('build/index.js') }}"></script>
+
+    {% block js %}{% endblock %}
     </body>
 </html>
