@@ -129,7 +129,7 @@
 
     <div class="row pop-up" style="display: none;">
         <div class="box small-6 large-centered">
-            <button class="close-button">&#10006;</button>
+            <a href="#" class="close-button">&#10006;</a>
             <h3>RODO</h3>
             <div>
                 <h4><b>Klauzula informacyjna o przetwarzaniu danych</b></h4>
@@ -194,16 +194,21 @@
         var contact = document.querySelector('#contact');
         var rodo = () => {
                 $('.pop-up').fadeIn(1000);
-        };
 
-           document.querySelector('.close-button').addEventListener('click', e => {
-                    document.body.scrollTop = document.documentElement.scrollTop = contact.offsetTop
-                    console.log(contact.offsetTop);
+            document.querySe
+
+
+
+
+lector('.close-button').addEventListener('click', e => {
                     $('.pop-up').fadeOut(700);
                     $('#overlay').removeClass('blur-in');
                     $('#overlay').addClass('blur-out');
-        });
-
+                    e.stopPropagation();
+                    //document.body.scrollTop = document.documentElement.scrollTop = 0;
+                    contact.scrollIntoView();
+            });
+        };
 
         document.querySelector('#rodo').addEventListener('click', () => {
             rodo();
