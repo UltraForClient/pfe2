@@ -202,7 +202,12 @@
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
 
     <script type="application/javascript">
-        $( "#dialog" ).dialog();
+        $( "#dialog" ).dialog({
+            maxWidth:600,
+            maxHeight: 500,
+            width: 600,
+            height: 500,
+        });
 
         var contact = document.querySelector('#contact');
         var rodo = () => {
