@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Entity\Dialog;
 use App\Entity\Mail;
 use App\Entity\Conf;
 use App\Entity\EnvironmentImage;
@@ -15,6 +16,7 @@ use App\Entity\RelaxationSlider;
 use App\Entity\SecondSectionImage;
 use App\Entity\SecondSectionText;
 use App\Entity\SliderText;
+use App\Repository\DialogRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -82,7 +84,8 @@ class HomeController extends Controller
             'secondSectionImage' => $secondSectionImage,
             'secondSectionText' => $secondSectionText,
             'sliderText' => $sliderText,
-            'locale' => $locale
+            'locale' => $locale,
+            'dialog' => $em->getRepository(Dialog::class)->find(1)
         ]);
     }
 

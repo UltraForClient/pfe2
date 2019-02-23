@@ -88,3 +88,12 @@ easy_admin:
             label: 'Okolice tekest'
             class: App\Entity\EnvironmentText
             disabled_actions: ['new', 'delete']
+        Dialog:
+            label: 'Okienko'
+            class: App\Entity\Dialog
+#            disabled_actions: ['new', 'delete']
+            form:
+                fields:
+                    - { property: 'title', type: 'text' }
+                    - { property: 'imageFile', type: 'vich_image', template: 'vich_uploader_image.html.twig' }
+                    - { property: 'text', type: 'text' }
